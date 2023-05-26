@@ -1,0 +1,254 @@
+/* 
+============================================+
+HTML element edits
+============================================+
+*/
+
+input[type="checkbox"] {
+    height: 16px;
+    vertical-align: middle;
+}
+
+/* Stylize strikethrough text to be faded out, matching the background in dark mode */
+.HyperMD-task-line[data-task="x"] {
+    text-decoration: line-through !important;
+    text-decoration-thickness: 110% !important; /* Go a little over 100% to include overhangs */
+    text-decoration-color: rgba(30, 30, 30, .65) !important;
+    color: white !important; /* Make normal text a little brighter */
+}
+
+span {
+    text-decoration: inherit;
+}
+
+
+/* 
+============================================+
+Overwriting their styles
+============================================+
+*/
+
+/* Stylize inline code blocks */
+.cm-inline-code {
+    color: rgb(135, 182, 249) !important;
+    border-radius: 3px;
+    background-color: rgba(135, 182, 249, 0.1) !important;
+    outline: 4px solid rgba(135, 182, 249, 0.1) !important;
+}
+
+.HyperMD-task-line[data-task="x"] > .cm-inline-code {
+    color: rgb(135, 182, 249) !important;
+    border-radius: 3px;
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+
+/* Hide the external link icon */
+.external-link {
+    padding-right: 0px;
+}
+
+/* Give collapsed headers a button-like appearance */
+.HyperMD-header {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: .25em !important;
+    padding-left: 1em !important;
+} 
+
+.HyperMD-header-1 {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.HyperMD-header-2 {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+.HyperMD-header-3 {
+    background-color: rgba(255, 255, 255, 0.025);
+}
+.HyperMD-header-4 {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+.HyperMD-header-5 {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.markdown-source-view.mod-cm6 .cm-content > * {
+    margin-bottom: 0.5em !important;
+
+}
+
+/* Give space between collapsed sections, primarly for each day's section */
+.cm-fold-indicator.is-collapsed {
+    padding: 4px;
+}
+
+/* Hide the ellipsis that appears when a section is collapsed */
+.cm-foldPlaceholder {
+    display: none;
+}
+
+/* Stylize the collapse icon */
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
+.collapse-indicator .collapse-icon {
+    background-color: #a882ff20;
+    border-radius: 6px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* 
+============================================+
+Project Titles
+============================================+
+*/
+
+.teal {
+    color: rgb(3, 218, 198);
+}
+
+.blue {
+    color: rgb(28, 151, 255);
+}
+
+.purple {
+    color: rgb(215, 113, 255);
+}
+
+.green {
+    color: rgb(54, 251, 82);
+}
+
+.red {
+    color: rgb(255, 92, 81);
+}
+
+.grey {
+    color: rgb(146, 147, 153);
+}
+
+.yellow {
+    color: rgb(255, 255, 21);
+}
+
+.orange {
+    color: rgb(250, 164, 16);
+}
+
+.pink {
+    color: #ff738d;
+}
+
+.HyperMD-task-line[data-task=" "] .gradient-1 {
+    background: -webkit-linear-gradient(45deg, rgb(254, 171, 76), rgb(255, 114, 114));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .gradient-2 {
+    background: -webkit-linear-gradient(45deg, rgb(255, 206, 83), rgb(137, 190, 84));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .gradient-3 {
+    background: -webkit-linear-gradient(45deg, rgb(193, 176, 255), rgb(71, 214, 114));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .gradient-4 {
+    background: -webkit-linear-gradient(45deg, #b6b9fd, #1BFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .gradient-5 {
+    background: -webkit-linear-gradient(45deg, #4E65FF, #92EFFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .gradient-6 {
+    background: -webkit-linear-gradient(290deg, #FDFCFB, #ff7b10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .general {
+    background: -webkit-linear-gradient(290deg, #93A5CF, #E4EfE9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .icg-rotation {
+    background: -webkit-linear-gradient(290deg, #EE9CA7, #FFDDE1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blocked {
+    color: rgba(255, 255, 255, 0.80);
+    border-radius: 3px;
+    background-color: #ff738d;
+    margin-right: 4px;
+    outline: 2px solid #ff738d;
+    padding: 1px
+}
+
+/* 
+============================================+
+Custom Layout Elements
+============================================+
+*/
+
+.subtitle {
+    color: rgb(180, 180, 180);
+    margin-left: 30px;
+}
+
+.table-header-container {
+    margin-left: 30px;
+}
+
+.table-header {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.header-project {
+    display: inline-block;
+    width: 667px;
+}
+
+.header-task {
+    display: inline-block;
+    width: 86px;
+}
+
+.cm-html-embed {
+    width: calc(650px + 10px); /* Add 10px spacing to accommodate the checkbox width */ 
+    display: inline-block;
+}
+
+.row-project {
+    margin-right: auto;
+}
+
+.spacer-small {
+    height: 10px;
+}
+
+.spacer-medium {
+    height: 25px;
+}
+
+.spacer-large {
+    height: 50px;
+}
+
