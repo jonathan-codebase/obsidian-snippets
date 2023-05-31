@@ -50,14 +50,14 @@ Overwriting their styles
 }
 
 /* Give collapsed headers a button-like appearance */
-.HyperMD-header {
+/* .HyperMD-header {
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     padding: .25em !important;
     padding-left: 1em !important;
-} 
+}  */
 
-.HyperMD-header-1 {
+/* .HyperMD-header-1 {
     background-color: rgba(255, 255, 255, 0.05);
 }
 .HyperMD-header-2 {
@@ -71,25 +71,24 @@ Overwriting their styles
 }
 .HyperMD-header-5 {
     background-color: rgba(255, 255, 255, 0.01);
-}
+} */
 
-.markdown-source-view.mod-cm6 .cm-content > * {
-    margin-bottom: 0.5em !important;
-
-}
+/* .markdown-source-view.mod-cm6 .cm-content > * {
+    margin-bottom: 0.5em !important; */
+/* } */
 
 /* Give space between collapsed sections, primarly for each day's section */
-.cm-fold-indicator.is-collapsed {
+/* .cm-fold-indicator.is-collapsed {
     padding: 4px;
-}
+} */
 
 /* Hide the ellipsis that appears when a section is collapsed */
-.cm-foldPlaceholder {
+/* .cm-foldPlaceholder {
     display: none;
-}
+} */
 
 /* Stylize the collapse icon */
-.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
+/* .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
 .collapse-indicator .collapse-icon {
     background-color: #a882ff20;
     border-radius: 6px;
@@ -100,7 +99,7 @@ Overwriting their styles
     padding: 0px;
     margin-right: 8px;
     cursor: pointer;
-}
+} */
 
 /* 
 ============================================+
