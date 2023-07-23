@@ -19,6 +19,7 @@ input[type="checkbox"] {
 
 span {
     text-decoration: inherit;
+    /* width: fit-content !important; */
 }
 
 
@@ -49,56 +50,23 @@ Overwriting their styles
     padding-right: 0px;
 }
 
-/* Give collapsed headers a button-like appearance */
-/* .HyperMD-header {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: .25em !important;
-    padding-left: 1em !important;
-}  */
-
-/* .HyperMD-header-1 {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-.HyperMD-header-2 {
-    background-color: rgba(255, 255, 255, 0.03);
-}
-.HyperMD-header-3 {
-    background-color: rgba(255, 255, 255, 0.025);
-}
-.HyperMD-header-4 {
-    background-color: rgba(255, 255, 255, 0.02);
-}
-.HyperMD-header-5 {
-    background-color: rgba(255, 255, 255, 0.01);
-} */
-
-/* .markdown-source-view.mod-cm6 .cm-content > * {
-    margin-bottom: 0.5em !important; */
-/* } */
-
-/* Give space between collapsed sections, primarly for each day's section */
-/* .cm-fold-indicator.is-collapsed {
-    padding: 4px;
-} */
-
-/* Hide the ellipsis that appears when a section is collapsed */
-/* .cm-foldPlaceholder {
-    display: none;
-} */
-
-/* Stylize the collapse icon */
-/* .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
-.collapse-indicator .collapse-icon {
-    background-color: #a882ff20;
-    border-radius: 6px;
-    width: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    margin-right: 8px;
-    cursor: pointer;
+/* Add spacing for headers */
+/* .markdown-source-view.mod-cm6 .cm-content {
+    .HyperMD-header-1 {
+        margin-top: 20px !important;
+    }
+    .HyperMD-header-2 {
+    margin-top: 17px !important;
+    }
+    .HyperMD-header-3 {
+        margin-top: 15px !important;
+    }
+    .HyperMD-header-4 {
+        margin-top: 12px !important;
+    }
+    .HyperMD-header-5 {
+        margin-top: 10px !important;
+    }
 } */
 
 /* 
@@ -161,7 +129,7 @@ Project Titles
     -webkit-text-fill-color: transparent;
 }
 
-.HyperMD-task-line[data-task=" "] .gradient-4 {
+.HyperMD-task-line[data-task=" "] .banners {
     background: -webkit-linear-gradient(45deg, #b6b9fd, #1BFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -187,6 +155,12 @@ Project Titles
 
 .HyperMD-task-line[data-task=" "] .icg-rotation {
     background: -webkit-linear-gradient(290deg, #EE9CA7, #FFDDE1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .datepicker {
+    background: -webkit-linear-gradient(290deg, #8eb0ff, #E4EfE9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -230,7 +204,7 @@ Custom Layout Elements
     width: 86px;
 }
 
-.cm-html-embed {
+.HyperMD-list-line-1 .cm-html-embed {
     width: calc(650px + 10px); /* Add 10px spacing to accommodate the checkbox width */ 
     display: inline-block;
 }
