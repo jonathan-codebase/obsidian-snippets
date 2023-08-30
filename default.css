@@ -147,6 +147,24 @@ Project Titles
     -webkit-text-fill-color: transparent;
 }
 
+.HyperMD-task-line[data-task=" "] .browser-deprecation {
+    background: -webkit-linear-gradient(290deg, #62b6ff, #ebf8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .examples-viewer {
+    background: -webkit-linear-gradient(290deg, #8488ff, #ebf8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HyperMD-task-line[data-task=" "] .vrt {
+    background: -webkit-linear-gradient(290deg, #ffda84, #fff7e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .HyperMD-task-line[data-task=" "] .general {
     background: -webkit-linear-gradient(290deg, #93A5CF, #E4EfE9);
     -webkit-background-clip: text;
